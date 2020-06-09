@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uxa-lh-thC">
+                                <rect key="frame" x="70" y="290" width="60" height="60"/>
+                                <state key="normal" image="qing.png"/>
+                                <connections>
+                                    <action selector="changLogoClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t5q-Kx-mzB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjF-Hc-t0n">
+                                <rect key="frame" x="70" y="400" width="60" height="60"/>
+                                <state key="normal" image="wu.png"/>
+                                <connections>
+                                    <action selector="changLogoClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7bP-bi-4at"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYb-Ur-su1">
+                                <rect key="frame" x="284" y="290" width="60" height="60"/>
+                                <state key="normal" image="yin.png"/>
+                                <connections>
+                                    <action selector="changLogoClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xfr-Vn-ceY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yaf-Pd-awJ">
+                                <rect key="frame" x="284" y="400" width="60" height="60"/>
+                                <state key="normal" image="yu.png"/>
+                                <connections>
+                                    <action selector="changLogoClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Rw-CW-QHX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="改变展示的App Logo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHW-tR-g07">
+                                <rect key="frame" x="96" y="184" width="222" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yYb-Ur-su1" secondAttribute="trailing" constant="70" id="0at-Yv-GjK"/>
+                            <constraint firstItem="Uxa-lh-thC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="6D4-CY-9R0"/>
+                            <constraint firstItem="pjF-Hc-t0n" firstAttribute="top" secondItem="Uxa-lh-thC" secondAttribute="bottom" constant="50" id="6dg-WR-hbm"/>
+                            <constraint firstItem="yYb-Ur-su1" firstAttribute="width" secondItem="Uxa-lh-thC" secondAttribute="width" id="DCg-tH-vWB"/>
+                            <constraint firstItem="Uxa-lh-thC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="246" id="FvO-TB-9kK"/>
+                            <constraint firstItem="pjF-Hc-t0n" firstAttribute="centerX" secondItem="Uxa-lh-thC" secondAttribute="centerX" id="LLV-Mo-WDX"/>
+                            <constraint firstItem="Yaf-Pd-awJ" firstAttribute="centerX" secondItem="yYb-Ur-su1" secondAttribute="centerX" id="RxE-q5-WzM"/>
+                            <constraint firstItem="Yaf-Pd-awJ" firstAttribute="height" secondItem="pjF-Hc-t0n" secondAttribute="height" id="S53-QG-36L"/>
+                            <constraint firstItem="zHW-tR-g07" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="140" id="c9O-4o-jzQ"/>
+                            <constraint firstItem="yYb-Ur-su1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="246" id="eCS-lY-Z03"/>
+                            <constraint firstItem="zHW-tR-g07" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jA2-Fp-3Tc"/>
+                            <constraint firstItem="Yaf-Pd-awJ" firstAttribute="width" secondItem="pjF-Hc-t0n" secondAttribute="width" id="shY-N9-XlX"/>
+                            <constraint firstItem="Yaf-Pd-awJ" firstAttribute="top" secondItem="yYb-Ur-su1" secondAttribute="bottom" constant="50" id="vd2-sr-rPe"/>
+                            <constraint firstItem="yYb-Ur-su1" firstAttribute="height" secondItem="Uxa-lh-thC" secondAttribute="height" id="wGR-up-RxE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="qing.png" width="60" height="60"/>
+        <image name="wu.png" width="60" height="60"/>
+        <image name="yin.png" width="60" height="60"/>
+        <image name="yu.png" width="60" height="60"/>
+    </resources>
+</document>
